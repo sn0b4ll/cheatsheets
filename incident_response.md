@@ -8,7 +8,7 @@
 | --- | --- | --- | 
 | 4624 | Logon successful| Destination System |
 | 4625 | Logon failed | Destination System |
-| 4637/4647 | Logoff | Destination System |
+| 4634/4647 | Logoff | Destination System |
 | 4648 | Logon with explicit credentials (for example runas) | Originating or Both Systems |
 | 4672 | Logon with Admin-Rights | Destination System |
 | 4768 | Ticket Granting Ticket was granted | Authenticating System |
