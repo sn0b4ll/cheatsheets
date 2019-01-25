@@ -1,7 +1,7 @@
 # Incident / Compromise Response Cheatsheet
+Version: 1.1
 
 ## Log-Analysis
-
 ### Basic Event-IDs
 #### Login and Access Activity
 | Event-ID | Description | Where |
@@ -136,3 +136,14 @@ Enabled in W10 / Win2012R2+ by default. Log ist WMI-Activity/Operational
 | --- | --- |
 | 4624 + 4672 | Privileged Logon |
 | (4624\|4625) + Logon-Type 2 + PsExec | PsExec with explicit credentials |
+
+### SIDs
+| SID | Description |
+| --- | --- |
+| S-1-5-21domain-500 | Built-in Administrator accounts in their respective issuing authorities |
+| S-1-5-21domain-512 | Domain Admin |
+| S-1-5-21domain-513 | Domain User |
+| S-1-5-32-544 |
+| S-1-5-21domain-1... | Local Users (1000 often used as normal user with Admin-Rights) |
+
+Source: https://support.microsoft.com/sv-se/help/243330/well-known-security-identifiers-in-windows-operating-systems
