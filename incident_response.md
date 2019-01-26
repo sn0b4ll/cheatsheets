@@ -1,5 +1,32 @@
 # Incident / Compromise Response Cheatsheet
-Version: 1.1
+Version: 1.2
+
+- [Log-Analysis](#log-analysis)
+  * [Basic Event-IDs](#basic-event-ids)
+    + [Login and Access Activity](#login-and-access-activity)
+      - [Logon-Types](#logon-types)
+      - [Failed Logon-Types](#failed-logon-types)
+    + [User and Group Management](#user-and-group-management)
+    + [Log-Clearing](#log-clearing)
+    + [Service-related Events](#service-related-events)
+      - [Security-Log](#security-log)
+      - [System-Log](#system-log)
+    + [Application-related Events](#application-related-events)
+      - [Meta](#meta)
+      - [Events](#events)
+    + [Process-related Events](#process-related-events)
+      - [Meta](#meta-1)
+      - [Events](#events-1)
+    + [Powershell-related Events](#powershell-related-events)
+      - [Meta](#meta-2)
+      - [Events](#events-2)
+    + [WMI-related Events](#wmi-related-events)
+      - [Meta](#meta-3)
+      - [Events](#events-3)
+  * [Combined Events](#combined-events)
+  * [SIDs](#sids)
+- [Other artifacts](#other-artifacts)
+  * [MRU](#mru)
 
 ## Log-Analysis
 ### Basic Event-IDs
@@ -147,3 +174,13 @@ Enabled in W10 / Win2012R2+ by default. Log ist WMI-Activity/Operational
 | S-1-5-21domain-1... | Local Users (1000 often used as normal user with Admin-Rights) |
 
 Source: https://support.microsoft.com/sv-se/help/243330/well-known-security-identifiers-in-windows-operating-systems
+
+## Other artifacts
+
+### MRU
+| Name | Loction | Description |
+| --- | --- | --- |
+| OpenSaveMRU | HKCU/Software/Microsoft/Windows/CurrentVersion/Explorer/ComDIg32/OpenSaveMRU | Tracks files that have been opened or saved within a Windows shell dialog box. |
+| LastVisitedMRU | HKCU/Software/Microsoft/Windows/CurrentVersion/Explorer&ComDIg32/LastVisitedMRU  | Tracks the specific executable used by an application to open the files documented in the OpenSaveMRU key and the directory location for the last file that was accessed by that application. |
+
+Source: https://digital-forensics.sans.org/blog/2010/04/02/openrunsavemru-lastvisitedmru/
