@@ -24,6 +24,7 @@ Version: 1.3
       - [Meta](#meta-3)
       - [Events](#events-3)
     + [File- and Folder-related Events](#file--and-folder-related-events)
+    + [Time-Manipulation-Events](#time-manipulation-events)
   * [Combined Events](#combined-events)
 - [Other](#other)
   * [SIDs](#sids)
@@ -164,6 +165,13 @@ Enabled in W10 / Win2012R2+ by default. Log ist WMI-Activity/Operational
 | 4656 | Object-Handle requested |
 | 4660 | Object deleted |
 | 4663 | Object-Access attempt (rwd) |
+
+
+#### Time-Manipulation-Events
+| Event-ID | Description |
+| --- | --- |
+| 1 | Kernel-General (System-Log) |
+| 4616 | System time was changed (Security-Log) |
 
 ### Combined Events
 | Indicators | Description |
