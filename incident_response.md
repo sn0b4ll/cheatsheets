@@ -23,6 +23,7 @@ Version: 1.3
     + [WMI-related Events](#wmi-related-events)
       - [Meta](#meta-3)
       - [Events](#events-3)
+    + [File- and Folder-related Events](#file--and-folder-related-events)
   * [Combined Events](#combined-events)
 - [Other](#other)
   * [SIDs](#sids)
@@ -157,6 +158,12 @@ Enabled in W10 / Win2012R2+ by default. Log ist WMI-Activity/Operational
 | 5859 | Details for created filter |
 | 5861 | Record filter created |
 
+#### File- and Folder-related Events
+| Event-ID | Description |
+| --- | --- |
+| 4656 | Object-Handle requested |
+| 4660 | Object deleted |
+| 4663 | Object-Access attempt (rwd) |
 
 ### Combined Events
 | Indicators | Description |
