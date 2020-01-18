@@ -21,3 +21,6 @@ Try
 ftp <ip>
 ```
 and use "anonymous" as name.
+
+# Local Priv Esc
+https://gtfobins.github.io/
