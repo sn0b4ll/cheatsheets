@@ -36,3 +36,15 @@ mv lo.jpg lo.php.jpg
 ```
 https://github.com/xapax/security/blob/master/bypass_image_upload.md
 
+
+# Interactive Python pty
+`python3 -c 'import pty; pty.spawn("/bin/sh")'`
+
+
+# Sticky-Bit
+```
+find / -user root -perm -4000 -print 2>/dev/null
+find / -perm -u=s -type f 2>/dev/null
+find / -user root -perm -4000 -exec ls -ldb {} \;
+```
+
