@@ -50,3 +50,6 @@ find / -user root -perm -4000 -exec ls -ldb {} \;
 
 # Exploit via Path if SUID-Binary does not use full path
 https://www.hackingarticles.in/linux-privilege-escalation-using-path-variable/
+
+# SMB-Enum
+enum4linux
