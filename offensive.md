@@ -53,3 +53,6 @@ https://www.hackingarticles.in/linux-privilege-escalation-using-path-variable/
 
 # SMB-Enum
 enum4linux
+
+# AzureAD
+https://github.com/VbScrub/AdSyncDecrypt/releases
