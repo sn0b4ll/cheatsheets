@@ -17,6 +17,9 @@ Follows the EProcess-List for processes (fast, but may miss unlinked/dead proces
 ## pstree
 Show processes in tree-view.
 
+## psxview
+Use different techs to detect processes and compare them to find "hidden" processes.
+
 ## procdump
 ## cmdscan
 ## strings
