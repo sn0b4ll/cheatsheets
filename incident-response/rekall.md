@@ -14,8 +14,15 @@ Linux:
 In Rekall:
 `plugins.<tab><tab>`
 
+## Help on plugin
+`<pluginname>?`
+
 # Advanced Stuff
 ## Find Prog owning specific memory adress / find virtual addr from physical addr
+### ptov
 In Rekall: `ptov(<adress>)`
 
 Where `ptov` stands for physical to virtual
+
+### pastovas
+In Rekall: `pas2vas offsets="<address>"`
