@@ -17,9 +17,9 @@ Follows the EProcess-List for processes (fast, but may miss unlinked/dead proces
 `vol.py -f <image> --profile=<profile> pslist`
 
 ## pstree
-Show processes in tree-view, relies on pslist.
+Show processes in tree-view, relies on pslist and won't show other processes then pslist. `-v` shows alot more information like cmd-line, path and base-address.
 
-`vol.py -f <image> --profile=<profile> pstree`
+`vol.py -f <image> --profile=<profile> pstree [-v]`
 
 ## psxview
 Use different techs to detect processes and compare them to find "hidden" processes. `-P` gives the physical address for for example procdump, `-R` applies "Okay" to known "False"-Entries.
