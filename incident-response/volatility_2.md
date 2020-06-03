@@ -20,9 +20,13 @@ imageinfo
 | ------------- | ------------- |
 | `--yara-file=<path>`  | Path to Yara-File  |
 | `--yara-rules=<rule>`  | Run specific rule given as string  |
-| `-K`  | Also search in Kernel-Mem  |
+| `-K`  | Search in Kernel-Mem |
+| `-A`  | Sarch in Kernel- and User-Mem |
+| `-p <pids>`  | Work on those pids (comma-separated list) |
 | `-Y <rule>`  | Like `--yara-rules` |
 | `-Y <path>`  | Like `--yara-file` |
+
+More Params via `vol.py yarascan -h`
 
 ### Examples
 Default:
