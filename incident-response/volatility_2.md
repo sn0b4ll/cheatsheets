@@ -18,9 +18,11 @@ Follows the EProcess-List for processes (fast, but may miss unlinked/dead proces
 Show processes in tree-view.
 
 ## psxview
-Use different techs to detect processes and compare them to find "hidden" processes.
+Use different techs to detect processes and compare them to find "hidden" processes. `-P` gives the physical address for for example procdump.
 
 ## procdump
+`vol.py -f <image> --profile=<profile> procdump -o <offset> -D <output-dir>`
+
 ## cmdscan
 ## strings
 ## modules and moddump
