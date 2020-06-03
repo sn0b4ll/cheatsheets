@@ -37,4 +37,4 @@ Search for String, also include Kernel-Mem:
 `vol.py -f <image> --profile=<profile> yarascan -K -Y "string"`
 
 ## kdbgscan
-Usefull if imageinfo fails.
+Usefull if imageinfo fails and if one wants to know the offset to the KDBG in an image.
