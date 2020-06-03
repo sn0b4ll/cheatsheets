@@ -17,7 +17,7 @@ Follows the EProcess-List for processes (fast, but may miss unlinked/dead proces
 `vol.py -f <image> --profile=<profile> pslist`
 
 ## pstree
-Show processes in tree-view.
+Show processes in tree-view, relies on pslist.
 
 `vol.py -f <image> --profile=<profile> pstree`
 
