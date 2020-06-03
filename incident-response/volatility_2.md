@@ -14,13 +14,21 @@ Carves the image for processes.
 ## pslist
 Follows the EProcess-List for processes (fast, but may miss unlinked/dead processes).
 
+`vol.py -f <image> --profile=<profile> pslist`
+
 ## pstree
 Show processes in tree-view.
+
+`vol.py -f <image> --profile=<profile> pstree`
 
 ## psxview
 Use different techs to detect processes and compare them to find "hidden" processes. `-P` gives the physical address for for example procdump.
 
+`vol.py -f <image> --profile=<profile> psxview [-P]`
+
 ## procdump
+Dump a proc by offset.
+
 `vol.py -f <image> --profile=<profile> procdump -o <offset> -D <output-dir>`
 
 ## cmdscan
