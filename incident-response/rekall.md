@@ -17,7 +17,7 @@ In Rekall:
 ## Help on plugin
 `<pluginname>?`
 
-# Advanced Stuff
+# Advanced Stuff / Usefull Plugins
 ## Find Prog owning specific memory adress / find virtual addr from physical addr
 ### ptov
 In Rekall: `ptov(<adress>)`
@@ -34,4 +34,6 @@ Still some examples:
 - `yarascan(yara_file="<location of yara rule>")`
 - `yarascan(string="<string>",scan_kernel="True"`
 
+### pslist
+Does what you think it does :)
 
