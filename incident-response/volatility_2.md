@@ -14,6 +14,9 @@ Carves the image for processes.
 ## pslist
 Follows the EProcess-List for processes (fast, but may miss unlinked/dead processes).
 
+## pstree
+Show processes in tree-view.
+
 ## procdump
 ## cmdscan
 ## strings
