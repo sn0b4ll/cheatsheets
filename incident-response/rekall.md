@@ -40,3 +40,5 @@ Still some examples:
 ### pslist
 Does what you think it does :)
 
+### users
+Shows current users from SAM-Reg-Hive.
