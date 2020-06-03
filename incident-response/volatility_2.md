@@ -10,6 +10,7 @@ imageinfo
 # usefull plugins
 ## psscan
 ## pslist
+## procdump
 ## cmdscan
 ## strings
 ## modules and moddump
@@ -67,16 +68,29 @@ Usefull if imageinfo fails and if one wants to know the offset to the KDBG in an
 | ------------- | ------------- |
 | hh() | Basic help |
 | sc() | Show context for virtual address space |
+| db(\<addr\>) | Show data (hex and ascii) at addr |
 | cc(pid=<pid>) | Switch context to other process |
 | dt("\<Type\>") | Display Type Structure (see Structures below)  |
 | dt("\<Type\>", <addr>) | Populate structure with data at addr |
 | modules() | List all modules loaded in the image. |
 | ps() | Show processes |
+| dis(<addr>) | Show dissasembly for addr |
+| self._proc.get_process_address_space().read(\<addr\>, \<size\>) | Return the process data for \<addr\> with length \<size\>. |
+  
+Additionally normal python-code (like open, loops etc.) will run, since it's an iPython-Shell (to my knowledge).
   
   ## Structures
 | Struc  | Desc |
 | ------------- | ------------- |
-| "\_KDDEBUGGER_DATA64" | KDBR-Structure, can be used for example to determine windows version |
-| "\_LIST_ENTRY" | Structure for an simple List-Entry |
-| "\_EPROCESS" | Structure of the EPROCESS-Block, can be used agains an process-addr |
-| "\_LDR_DATA_TABLE_ENTRY" | Module-Entry from the LDR-Table. can be used against an dll oder other module addr |
+| \_KDDEBUGGER_DATA64 | KDBR-Structure, can be used for example to determine windows version |
+| \_LIST_ENTRY | Structure for an simple List-Entry |
+| \_EPROCESS | Structure of the EPROCESS-Block, can be used agains an process-addr |
+| \_LDR_DATA_TABLE_ENTRY | Module-Entry from the LDR-Table. Can be used against modules as seen by modules() |
+
+## How-To on dumping things
+
+1. Identify target context (`ps`, `modules`, etc.)
+2. Switch to context (`cc`)
+3. Identify base-addr of wanted object (`handles`, `modules`)
+4. Identify size of wanted object (`dt` + right structure)
+5. Use `self._proc.get_process_address_space().read(\<addr\>, \<size\>)` to get data and write it to file via python normal file interaction (`open`).
