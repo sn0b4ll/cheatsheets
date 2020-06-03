@@ -12,8 +12,23 @@ imageinfo
 ## pslist
 ## cmdscan
 ## strings
-## modules
-List all loaded modules from the LDRT (LoadeR Data Table?).
+## modules and moddump
+Use 
+
+`vol.py -f <image> --profile=<profile> modules`
+
+to list all loaded modules from the LDRT (LoadeR Data Table?) and
+
+`vol.py -f <image> --profile=<profile> moddump -b <base_addr> -D <out_dir>`
+
+to dump it.
+
+## ssdt
+SystemServiceDescriptorTable
+
+Tipp for easily finding rouge drivers:
+
+`vol.py -f <image> --profile=<profile> ssdt | egrep -v "ntosk|win32"`
 
 ## printkey
 `vol.py -f <image> --profile=<profile> printkey -K "<searchterm>"`
