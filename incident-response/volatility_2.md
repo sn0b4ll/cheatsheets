@@ -61,7 +61,7 @@ Usefull if imageinfo fails and if one wants to know the offset to the KDBG in an
   ## Structures
 | Struc  | Desc |
 | ------------- | ------------- |
-| "\_KDDEBUGGER_DATA64" | KDBR-Structure |
+| "\_KDDEBUGGER_DATA64" | KDBR-Structure, can be used for example to determine windows version |
 | "\_LIST_ENTRY" | Structure for an simple List-Entry |
-| "\_EPROCESS" | Structure of the EPROCESS-Block |
-| "\_LDR_DATA_TABLE_ENTRY" | Module-Entry from the LDR-Table |
+| "\_EPROCESS" | Structure of the EPROCESS-Block, can be used agains an process-addr |
+| "\_LDR_DATA_TABLE_ENTRY" | Module-Entry from the LDR-Table. can be used against an dll oder other module addr |
