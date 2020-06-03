@@ -15,6 +15,7 @@ In Rekall:
 `plugins.<tab><tab>`
 
 # Advanced Stuff
-## Find Prog owning specific memory adress
-In Rekall
-`ptov(<adress>)`
+## Find Prog owning specific memory adress / find virtual addr from physical addr
+In Rekall: `ptov(<adress>)`
+
+Where `ptov` stands for physical to virtual
