@@ -9,3 +9,12 @@ Windows:
 
 Linux:
 `rekall --live`
+
+## List plugins
+In Rekall:
+`plugins.<tab><tab>`
+
+# Advanced Stuff
+## Find Prog owning specific memory adress
+In Rekall
+`ptov(<adress>)`
