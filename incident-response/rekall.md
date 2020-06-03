@@ -26,3 +26,7 @@ Where `ptov` stands for physical to virtual
 
 ### pastovas
 In Rekall: `pas2vas offsets="<address>"`
+
+### YaraScan
+`yarascan(yara_file="<location of yara rule>")`
+
