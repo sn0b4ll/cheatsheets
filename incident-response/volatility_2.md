@@ -7,9 +7,13 @@
 ## Find the right profile
 imageinfo
 
-# usefull plugins
+# Usefull Plugins
 ## psscan
+Carves the image for processes.
+
 ## pslist
+Follows the EProcess-List for processes (fast, but may miss unlinked/dead processes).
+
 ## procdump
 ## cmdscan
 ## strings
@@ -84,10 +88,10 @@ Additionally normal python-code (like open, loops etc.) will run, since it's an 
 | ------------- | ------------- |
 | \_KDDEBUGGER_DATA64 | KDBR-Structure, can be used for example to determine windows version |
 | \_LIST_ENTRY | Structure for an simple List-Entry |
-| \_EPROCESS | Structure of the EPROCESS-Block, can be used agains an process-addr |
+| \_EPROCESS | Structure of the EPROCESS-Block, can be used against an process-addr |
 | \_LDR_DATA_TABLE_ENTRY | Module-Entry from the LDR-Table. Can be used against modules as seen by modules() |
 
-## How-To on dumping things
+## How-To on dumping things via volshell
 
 1. Identify target context (`ps`, `modules`, etc.)
 2. Switch to context (`cc`)
