@@ -22,7 +22,7 @@ Show processes in tree-view.
 `vol.py -f <image> --profile=<profile> pstree`
 
 ## psxview
-Use different techs to detect processes and compare them to find "hidden" processes. `-P` gives the physical address for for example procdump.
+Use different techs to detect processes and compare them to find "hidden" processes. `-P` gives the physical address for for example procdump, `-R` filters out known processes.
 
 `vol.py -f <image> --profile=<profile> psxview [-P]`
 
