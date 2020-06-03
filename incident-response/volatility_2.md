@@ -21,7 +21,8 @@ imageinfo
 | `--yara-file=<path>`  | Path to Yara-File  |
 | `--yara-rules=<rule>`  | Run specific rule given as string  |
 | `-K`  | Also search in Kernel-Mem  |
-| `-Y`  | Like `--yara-rules` |
+| `-Y <rule>`  | Like `--yara-rules` |
+| `-Y <path>`  | Like `--yara-file` |
 
 ### Examples
 Default:
