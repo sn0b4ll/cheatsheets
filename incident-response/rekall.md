@@ -1,21 +1,21 @@
 # Basic Usage
 
 ## Read from File:
-`rekal[.exe] -f <file>`
+`rekall[.exe] -f <file>`
 
 ## Live Analysis
 Windows:
-`rekal.exe live`
+`rekall.exe live`
 
 Linux:
-`rekal --live`
+`rekall --live`
 
 ## List plugins
-In Rekal:
+In Rekall:
 `plugins.<tab><tab>`
 
 # Advanced Stuff
 ## Find Prog owning specific memory adress / find virtual addr from physical addr
-In Rekal: `ptov(<adress>)`
+In Rekall: `ptov(<adress>)`
 
 Where `ptov` stands for physical to virtual
