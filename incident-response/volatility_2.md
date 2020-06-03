@@ -101,3 +101,6 @@ Additionally normal python-code (like open, loops etc.) will run, since it's an 
 3. Identify base-addr of wanted object (`handles`, `modules`)
 4. Identify size of wanted object (`dt` + right structure)
 5. Use `self._proc.get_process_address_space().read(\<addr\>, \<size\>)` to get data and write it to file via python normal file interaction (`open`).
+
+# Possible TODOs
+- Enhance pslist to match the one from recall (also look at CSRSS, Handles, Sessions, PspCidTable, not "only" PsActiveProcessHead)
