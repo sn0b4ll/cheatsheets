@@ -12,6 +12,9 @@ imageinfo
 ## pslist
 ## cmdscan
 ## strings
+## modules
+List all loaded modules from the LDRT (LoadeR Data Table?).
+
 ## printkey
 `vol.py -f <image> --profile=<profile> printkey -K "<searchterm>"`
 
@@ -43,3 +46,22 @@ Search for String, also include Kernel-Mem:
 
 ## kdbgscan
 Usefull if imageinfo fails and if one wants to know the offset to the KDBG in an image.
+
+# Volshell-Commands
+| Command  | Desc |
+| ------------- | ------------- |
+| hh() | Basic help |
+| sc() | Show context for virtual address space |
+| cc(pid=<pid>) | Switch context to other process |
+| dt("\<Type\>") | Display Type Structure (see Structures below)  |
+| dt("\<Type\>", <addr>) | Populate structure with data at addr |
+| modules() | List all modules loaded in the image. |
+| ps() | Show processes |
+  
+  ## Structures
+| Struc  | Desc |
+| ------------- | ------------- |
+| "\_KDDEBUGGER_DATA64" | KDBR-Structure |
+| "\_LIST_ENTRY" | Structure for an simple List-Entry |
+| "\_EPROCESS" | Structure of the EPROCESS-Block |
+| "\_LDR_DATA_TABLE_ENTRY" | Module-Entry from the LDR-Table |
