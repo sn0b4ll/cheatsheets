@@ -1,5 +1,8 @@
 # Basic Usage
 
+## Cache and Config
+Config is in `.rekallrc`. A cache can be defined there, so rekall does not rerun thinks it already did in the past.
+
 ## Read from File:
 `rekall[.exe] -f <file>`
 
