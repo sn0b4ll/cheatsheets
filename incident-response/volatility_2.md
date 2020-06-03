@@ -12,6 +12,11 @@ imageinfo
 ## pslist
 ## cmdscan
 ## strings
+## printkey
+`vol.py -f <image> --profile=<profile> printkey -K "<searchterm>"`
+
+where searchterm should be something like "Microsoft\Windows NT\CurrentVersion" ans should not include the hive name.
+
 ## yarascan
 [Doku](https://github.com/volatilityfoundation/volatility/wiki/Command-Reference-Mal#yarascan)
 ### Params
