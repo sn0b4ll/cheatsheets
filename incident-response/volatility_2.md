@@ -26,7 +26,7 @@ imageinfo
 
 ### Examples
 Default:
-python vol.py -f zeus.vmem yarascan --yara-file=/path/to/rules.yar
+`vol.py -f <image> yarascan --yara-file=</path/to/rules.yar>`
 
 Search for String, also include Kernel-Mem:
 
