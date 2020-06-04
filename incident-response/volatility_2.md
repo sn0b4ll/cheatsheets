@@ -13,55 +13,40 @@ Use `--plugins`-Switch. This _has_ to be the first param to vol!
 imageinfo
 
 # Usefull Plugins
-## psscan
+
+## Processes
+### psscan
 Carves the image for processes.
 
-## pslist
+### pslist
 Follows the EProcess-List for processes (fast, but may miss unlinked/dead processes).
 
 `vol.py -f <image> --profile=<profile> pslist`
 
-## pstree
+### pstree
 Show processes in tree-view, relies on pslist and won't show other processes then pslist. `-v` shows alot more information like cmd-line, path and base-address.
 
 `vol.py -f <image> --profile=<profile> pstree [-v]`
 
-## psxview
+### psxview
 Use different techs to detect processes and compare them to find "hidden" processes. `-P` gives the physical address for for example procdump, `-R` applies "Okay" to known "False"-Entries.
 
 `vol.py -f <image> --profile=<profile> psxview [-P]`
 
-## procdump
+### procdump
 Dump a proc by offset.
 
 `vol.py -f <image> --profile=<profile> procdump -o <offset> -D <output-dir>`
 
-## cmdscan
-## dlllist (32bit)
+### dlllist (32bit)
 Relies on pslist and lists all loaded DLLs. Only works with 32bit-Processes!
 
-## ldrmodules (64bit)
+### ldrmodules (64bit)
 List DLLs for 64bit-Process.
 
-## dlldump
+### dlldump
 `[..] dlldump -p <pid> -r <regex_for_name> -i -D <output_dir>`
 
-## driverscan
-## filescan and dumpfiles
-Scan for files in memory and use `[...] dumpfiles -Q <physical_addr> -n -D <out_dir>` to dump it.
-
-## hivescan
-## strings
-## mutantscan
-## ndispktscan
-Vista+, carves for network packages, can save as pcap. Takes longer then bulk_extractor, but produces same results.
-
-`[..] ndispktscan -p <out.pcap>`
-
-## netscan
-Works on Vista and later. Use `-V` if you want to get the virtual addresses.
-
-## thrdscan
 ## verinfo
 ## enumfunc
 List imports/exports of an dll
@@ -80,21 +65,46 @@ to list all loaded modules from the LDRT (LoadeR Data Table?) and
 
 to dump it.
 
-## ssdt
+
+## Network
+### ndispktscan
+Vista+, carves for network packages, can save as pcap. Takes longer then bulk_extractor, but produces same results.
+
+`[..] ndispktscan -p <out.pcap>`
+
+### netscan
+Works on Vista and later. Use `-V` if you want to get the virtual addresses.
+
+
+## Other
+
+### cmdscan
+
+
+### driverscan
+### filescan and dumpfiles
+Scan for files in memory and use `[...] dumpfiles -Q <physical_addr> -n -D <out_dir>` to dump it.
+
+### hivescan
+### strings
+### mutantscan
+### thrdscan
+
+### ssdt
 SystemServiceDescriptorTable
 
 Tipp for easily finding rouge drivers:
 
 `vol.py -f <image> --profile=<profile> ssdt | egrep -v "ntosk|win32"`
 
-## printkey
+### printkey
 `vol.py -f <image> --profile=<profile> printkey -K "<searchterm>"`
 
 where searchterm should be something like "Microsoft\Windows NT\CurrentVersion" ans should not include the hive name.
 
-## yarascan
+### yarascan
 [Doku](https://github.com/volatilityfoundation/volatility/wiki/Command-Reference-Mal#yarascan)
-### Params
+#### Params
 
 | Param  | Desc |
 | ------------- | ------------- |
@@ -108,7 +118,7 @@ where searchterm should be something like "Microsoft\Windows NT\CurrentVersion" 
 
 More Params via `vol.py yarascan -h`
 
-### Examples
+#### Examples
 Default:
 `vol.py -f <image> yarascan --yara-file=</path/to/rules.yar>`
 
@@ -116,7 +126,7 @@ Search for String, also include Kernel-Mem:
 
 `vol.py -f <image> --profile=<profile> yarascan -K -Y "string"`
 
-## kdbgscan
+### kdbgscan
 Usefull if imageinfo fails and if one wants to know the offset to the KDBG in an image.
 
 # Volshell-Commands
