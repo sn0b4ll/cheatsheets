@@ -4,6 +4,11 @@
 ## List all plugins ans profiles
 --info
 
+## Set custom plugin path
+Use `--plugins`-Switch. This _has_ to be the first param to vol!
+
+`vol.py --plugins=<dir> [...]`
+
 ## Find the right profile
 imageinfo
 
