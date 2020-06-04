@@ -20,6 +20,9 @@ In Rekall:
 ## Help on plugin
 `<pluginname>?`
 
+## Context-Related Commands
+`cc <pid>` change to pids context
+
 # Advanced Stuff / Usefull Plugins
 ## Find Prog owning specific memory adress / find virtual addr from physical addr
 ### ptov
@@ -39,6 +42,9 @@ Still some examples:
 
 ### pslist
 Does what you think it does :)
+
+### dlllist
+### peinfo
 
 ### users
 Shows current users from SAM-Reg-Hive.
