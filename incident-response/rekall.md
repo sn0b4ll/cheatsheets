@@ -44,6 +44,8 @@ Still some examples:
 Does what you think it does :)
 
 ### dlllist
+`dlllist <pid>`
+
 ### peinfo
 
 ### users
