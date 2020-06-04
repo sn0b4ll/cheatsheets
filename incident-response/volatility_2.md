@@ -32,6 +32,15 @@ Dump a proc by offset.
 `vol.py -f <image> --profile=<profile> procdump -o <offset> -D <output-dir>`
 
 ## cmdscan
+## dlllist (32bit)
+Relies on pslist and lists all loaded DLLs. Only works with 32bit-Processes!
+
+## ldrmodules (64bit)
+List DLLs for 64bit-Process.
+
+## dlldump
+`[..] dlldump -p <pid> -r <regex_for_name> -i -D <output_dir>`
+
 ## driverscan
 ## filescan and dumpfiles
 Scan for files in memory and use `[...] dumpfiles -Q <physical_addr> -n -D <out_dir>` to dump it.
