@@ -32,8 +32,14 @@ Dump a proc by offset.
 `vol.py -f <image> --profile=<profile> procdump -o <offset> -D <output-dir>`
 
 ## cmdscan
+## driverscan
+## filescan
+## hivescan
 ## strings
-## modules and moddump
+## mutantscan
+## netscan
+## thrdscan
+## modules/modscan and moddump
 Use 
 
 `vol.py -f <image> --profile=<profile> modules`
