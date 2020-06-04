@@ -33,12 +33,21 @@ Dump a proc by offset.
 
 ## cmdscan
 ## driverscan
-## filescan
+## filescan and dumpfiles
+Scan for files in memory and use `[...] dumpfiles -Q <physical_addr> -n -D <out_dir>` to dump it.
+
 ## hivescan
 ## strings
 ## mutantscan
 ## netscan
 ## thrdscan
+## verinfo
+## enumfunc
+List imports/exports of an dll
+
+## handles
+Show handles, try to filter for PID (`-p`), Types (`-t`0) or other things or it will be noisy! You can also use `-s` to further suppress "empty" entries.
+
 ## modules/modscan and moddump
 Use 
 
