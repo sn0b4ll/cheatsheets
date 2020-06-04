@@ -53,7 +53,14 @@ Scan for files in memory and use `[...] dumpfiles -Q <physical_addr> -n -D <out_
 ## hivescan
 ## strings
 ## mutantscan
+## ndispktscan
+Vista+, carves for network packages, can save as pcap. Takes longer then bulk_extractor, but produces same results.
+
+`[..] ndispktscan -p <out.pcap>`
+
 ## netscan
+Works on Vista and later. Use `-V` if you want to get the virtual addresses.
+
 ## thrdscan
 ## verinfo
 ## enumfunc
