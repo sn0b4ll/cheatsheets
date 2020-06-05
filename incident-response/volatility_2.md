@@ -138,7 +138,14 @@ Looks for message hooks, sometimes used by walware injecting itself via `SetWind
 ### kdbgscan
 Usefull if imageinfo fails and if one wants to know the offset to the KDBG in an image.
 
-# Volshell-Commands
+# Volshell
+## Params
+| Command  | Desc |
+| ------------- | ------------- |
+| `-p <pid>` | Start in the context of process defined by the pid |
+
+
+## Commands
 | Command  | Desc |
 | ------------- | ------------- |
 | hh() | Basic help |
