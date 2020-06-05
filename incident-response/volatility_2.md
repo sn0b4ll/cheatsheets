@@ -75,6 +75,15 @@ Vista+, carves for network packages, can save as pcap. Takes longer then bulk_ex
 ### netscan
 Works on Vista and later. Use `-V` if you want to get the virtual addresses.
 
+## registry
+
+### hivescan
+
+### printkey
+`vol.py -f <image> --profile=<profile> printkey -K "<searchterm>"`
+
+where searchterm should be something like "Microsoft\Windows NT\CurrentVersion" ans should not include the hive name.
+
 
 ## Other
 
@@ -85,7 +94,7 @@ Works on Vista and later. Use `-V` if you want to get the virtual addresses.
 ### filescan and dumpfiles
 Scan for files in memory and use `[...] dumpfiles -Q <physical_addr> -n -D <out_dir>` to dump it.
 
-### hivescan
+
 ### strings
 ### mutantscan
 ### thrdscan
@@ -96,11 +105,6 @@ SystemServiceDescriptorTable
 Tipp for easily finding rouge drivers:
 
 `vol.py -f <image> --profile=<profile> ssdt | egrep -v "ntosk|win32"`
-
-### printkey
-`vol.py -f <image> --profile=<profile> printkey -K "<searchterm>"`
-
-where searchterm should be something like "Microsoft\Windows NT\CurrentVersion" ans should not include the hive name.
 
 ### yarascan
 [Doku](https://github.com/volatilityfoundation/volatility/wiki/Command-Reference-Mal#yarascan)
@@ -125,6 +129,9 @@ Default:
 Search for String, also include Kernel-Mem:
 
 `vol.py -f <image> --profile=<profile> yarascan -K -Y "string"`
+
+### messagehooks
+Looks for message hooks, sometimes used by walware injecting itself via `SetWindowsHookEx` into other processes.
 
 ### kdbgscan
 Usefull if imageinfo fails and if one wants to know the offset to the KDBG in an image.
