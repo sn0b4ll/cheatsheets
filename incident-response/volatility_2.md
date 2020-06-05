@@ -84,15 +84,21 @@ Works on Vista and later. Use `-V` if you want to get the virtual addresses.
 
 where searchterm should be something like "Microsoft\Windows NT\CurrentVersion" ans should not include the hive name.
 
-
-## Other
-
-### cmdscan
+## Evil Drivers
 
 ### devicetree
 Might show evil drivers if they register as/ listen to devices.
 
 ### driverscan
+
+### driverirp
+
+### Unloadedmodules
+
+## Other
+
+### cmdscan
+
 ### filescan and dumpfiles
 Scan for files in memory and use `[...] dumpfiles -Q <physical_addr> -n -D <out_dir>` to dump it.
 
