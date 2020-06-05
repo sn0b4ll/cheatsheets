@@ -98,6 +98,8 @@ Scan for files in memory and use `[...] dumpfiles -Q <physical_addr> -n -D <out_
 ### strings
 ### mutantscan
 ### thrdscan
+### atoms
+Very rarely one can find atoms from atom-bombing code-injection still in the memory.
 
 ### ssdt
 SystemServiceDescriptorTable
