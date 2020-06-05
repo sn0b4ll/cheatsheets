@@ -89,6 +89,8 @@ where searchterm should be something like "Microsoft\Windows NT\CurrentVersion" 
 
 ### cmdscan
 
+### devicetree
+Might show evil drivers if they register as/ listen to devices.
 
 ### driverscan
 ### filescan and dumpfiles
