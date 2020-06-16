@@ -24,6 +24,7 @@ and use "anonymous" as name.
 
 # Local Priv Esc
 https://gtfobins.github.io/
+https://lolbas-project.github.io/#
 
 # File-Filter-Busting
 
