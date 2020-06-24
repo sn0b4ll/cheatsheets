@@ -72,3 +72,6 @@ Afterwards crack with john or oclhashcat
   
 # Use Hash to access pc
 `psexec.py -hashes <hash> <user>@<target-host>`
+
+# Locations of files of an linux install
+`apt-file list <packet>`
