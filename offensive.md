@@ -75,3 +75,6 @@ Afterwards crack with john or oclhashcat
 
 # Locations of files of an linux install
 `apt-file list <packet>`
+
+# Exploit lxd group
+https://www.hackingarticles.in/lxd-privilege-escalation/
