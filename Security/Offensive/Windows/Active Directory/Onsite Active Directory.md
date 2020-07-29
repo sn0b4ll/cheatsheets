@@ -1,3 +1,4 @@
+#offensive #ad #activedirectory
 # Enum AD
 `GetNPUsers.py -usersfile <user_list> -dc-ip <dc-ip> <domain>/`
 

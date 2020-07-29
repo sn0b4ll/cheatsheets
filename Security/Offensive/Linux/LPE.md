@@ -1,4 +1,5 @@
 # Local Priv Esc
+#linux #lpe
 https://gtfobins.github.io/
 https://lolbas-project.github.io/#
 

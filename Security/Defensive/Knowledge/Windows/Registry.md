@@ -1,4 +1,6 @@
 # Registry Construct
+#windows #registry
+
 | | | | |
 | --- | --- | --- | --- |
 | HKCU\ | Software\ | Microsoft\Windws\CurrentVersion\ | Run |

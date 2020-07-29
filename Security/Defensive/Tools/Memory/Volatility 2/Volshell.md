@@ -1,4 +1,6 @@
 # Volshell
+[[Volatility 2]]-Shell for more direct access to an memory-image without all these helpful plugins. An alternative for Windows-Memory-Images is [[WindDBG]].
+
 ## Params
 | Command  | Desc |
 | ------------- | ------------- |
@@ -8,19 +10,18 @@
 ## Commands
 | Command  | Desc |
 | ------------- | ------------- |
-| hh() | Basic help |
-| sc() | Show context for virtual address space |
-| db(\<addr\>) | Show data (hex and ascii) at addr |
-| cc(pid=<pid>) | Switch context to other process |
-| dt("\<Type\>") | Display Type Structure (see [Windows-Kernel](Windows-Kernel))  |
-| dt("\<Type\>", <addr>) | Populate structure with data at addr |
-| modules() | List all modules loaded in the image. |
-| ps() | Show processes |
-| dis(<addr>) | Show dissasembly for addr |
-| self._proc.get_process_address_space().read(\<addr\>, \<size\>) | Return the process data for \<addr\> with length \<size\>. |
+| `hh()` | Basic help |
+| `sc()` | Show context for virtual address space |
+| `db(\<addr\>)` | Show data (hex and ascii) at addr |
+| `cc(pid=<pid>)` | Switch context to other process |
+| `dt("\<Type\>")` | Display Type Structure (see [Windows-Kernel](Windows-Kernel))  |
+| `dt("\<Type\>", <addr>)` | Populate structure with data at addr |
+| `modules()` | List all modules loaded in the image. |
+| `ps()` | Show processes |
+| `dis(<addr>)` | Show dissasembly for addr |
+| `self._proc.get_process_address_space().read(\<addr\>, \<size\>)` | Return the process data for \<addr\> with length \<size\>. |
   
-Additionally normal python-code (like open, loops etc.) will run, since it's an iPython-Shell (to my knowledge).
- 
+Additionally normal python-code (like open, loops etc.) will run, since it's based on iPython-Shell.
 
 ## How-To on dumping things via volshell
 

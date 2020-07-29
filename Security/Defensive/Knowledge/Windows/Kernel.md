@@ -1,4 +1,6 @@
 # Structures
+#windows #kernel
+
 | Struc  | Desc |
 | ------------- | ------------- |
 | \_KDDEBUGGER_DATA64 | KDBR-Structure, can be used for example to determine windows version |

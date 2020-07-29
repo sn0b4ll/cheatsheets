@@ -1,3 +1,4 @@
+#volatility2 #memory #forensic #hunting #dfir
 # Basic Usage
 `vol.py -f <image> --profile=<profile> [plugin|volshell]`
 
