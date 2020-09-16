@@ -6,3 +6,4 @@
  #pty #shell
  
 `python3 -c 'import pty; pty.spawn("/bin/sh")'`
+`python -c 'import pty; pty.spawn("/bin/sh")'`

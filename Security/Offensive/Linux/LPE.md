@@ -6,9 +6,14 @@ https://book.hacktricks.xyz/linux-unix/privilege-escalation
 
 - Get OS information
 - Check if the sudo version is vulnerable
+	- sudo -v
+	- sudo -l
 - Check the PATH, any writable folder?
+	- `set`
 - Check env variables, any sensitive detail?
 - Search for kernel exploits using scripts (DirtyCow?)
+	- https://www.exploit-db.com/exploits/40839
+	- gcc -pthread shell.c -o dirty -lcrypt
 - Dmesg signature verification failed error?
 - More system enum (date, system stats, cpu info, printers)
 - Enumerate more defenses
