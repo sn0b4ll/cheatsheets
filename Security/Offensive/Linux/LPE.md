@@ -53,4 +53,4 @@ sudo -H /usr/bin/pip3 install $TF
 ```
 
 # LinPEAS
-https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/blob/master/linPEAS/linpeas.sh
+https://raw.githubusercontent.com/carlospolop/privilege-escalation-awesome-scripts-suite/master/linPEAS/linpeas.sh
