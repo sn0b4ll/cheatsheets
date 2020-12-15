@@ -28,6 +28,10 @@ find / -perm -u=s -type f 2>/dev/null
 find / -user root -perm -4000 -exec ls -ldb {} \;
 ```
 
+## Unsanitized paths
+#unsanitizedpath #path
+If you find any custom binaries but they don't seem to do anything, try finding out what they do with `ltrace` and `strace`. Maybe they don't use a full path for an executable and you can make it execute one of you binaries instead by manipulation the path.
+
 # Find files belonging to user
 
 `find / -user <user> 2>/dev/null | egrep -v "proc|venv"`
@@ -50,3 +54,7 @@ Alternative (https://gtfobins.github.io/gtfobins/pip/):
 
 # Audit-Logs
 grep audit-logs for "data=" and decode as hex. Might contain passwords
+
+# Docker
+Dowload: https://github.com/PercussiveElbow/docker-escape-tool
+`./docker-escape auto`
