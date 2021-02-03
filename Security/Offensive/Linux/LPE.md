@@ -30,7 +30,7 @@ find / -user root -perm -4000 -exec ls -ldb {} \;
 
 ## Unsanitized paths
 #unsanitizedpath #path
-If you find any custom binaries but they don't seem to do anything, try finding out what they do with `ltrace` and `strace`. Maybe they don't use a full path for an executable and you can make it execute one of you binaries instead by manipulation the path.
+See [[Unsanitized Path]].
 
 # Find files belonging to user
 
