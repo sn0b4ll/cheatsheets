@@ -1,4 +1,4 @@
 # Linux
 1. [[Security/Offensive/Linux/Helpers]]
-2. [[LPE]]
+2. [[Security/Offensive/Linux/LPE]]
 3. [[openBSD]]

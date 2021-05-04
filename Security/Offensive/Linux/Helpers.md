@@ -8,6 +8,7 @@
 `python3 -c 'import pty; pty.spawn("/bin/sh")'`
 `python3 -c 'import pty; pty.spawn("/bin/bash")'`
 `python -c 'import pty; pty.spawn("/bin/sh")'`
+`python -c 'import pty; pty.spawn("/bin/bash")'`
 
 # Command injection space
 #whitespace #commandinjection #ifs

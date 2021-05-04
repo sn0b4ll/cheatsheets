@@ -1,7 +1,7 @@
 # Unsanitized Path
 #unsanitizedpath 
 
-1. Search for suid binaries (see [[LPE]])
+1. Search for suid binaries (see [[Security/Offensive/Linux/LPE]])
 2. Check if binary calls other binaries without full path via `ltrace` and `strace`
 ```
 XXXXXXXXXX:~$ ltrace ./backup 

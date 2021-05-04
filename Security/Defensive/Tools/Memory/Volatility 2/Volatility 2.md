@@ -206,3 +206,4 @@ Usefull if imageinfo fails and if one wants to know the offset to the KDBG in an
 # Possible TODOs
 - [ ] Enhance pslist to match the one from recall (also look at CSRSS, Handles, Sessions, PspCidTable, not "only" PsActiveProcessHead)
 - [ ] ptov in vol
+- vmss2core
