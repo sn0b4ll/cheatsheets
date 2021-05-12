@@ -37,6 +37,8 @@ See [[Unsanitized Path]].
 `find / -user <user> 2>/dev/null | egrep -v "proc|venv"`
 `find / -group <group> 2>/dev/null | egrep -v "proc|venv"`
 
+`find / -user marcus 2>/dev/null | egrep -v "proc|venv"`
+
 # Exploit via Path if SUID-Binary does not use full path
 https://www.hackingarticles.in/linux-privilege-escalation-using-path-variable/
 
@@ -56,8 +58,7 @@ Alternative (https://gtfobins.github.io/gtfobins/pip/):
 grep audit-logs for "data=" and decode as hex. Might contain passwords
 
 # Docker
-Dowload: https://github.com/PercussiveElbow/docker-escape-tool
-`./docker-escape auto`
+See [[Docker]].
 
 # Search for credentials
 ## DBs
@@ -66,3 +67,10 @@ If mysql or mariadb is running, search for credentials in the config files for w
 # Check for autologin
 - Check for autologin
 - `/etc/autologin`
+
+# Magic grep
+`grep -r 'keyword' /`
+`grep 'keyword' /etc -R 2>/dev/null`
+
+# Systemd services
+Check `/etc/systemd/` services for custom ones.

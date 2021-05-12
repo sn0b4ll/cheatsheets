@@ -32,6 +32,7 @@
     /usr/local/apache2/conf/httpd.conf
     /usr/local/apache/conf/httpd.conf
     /etc/apache2/sites-enabled/000-default
+	/etc/apache2/sites-enabled/000-default.conf
     /etc/apache2/sites-available/default
     /etc/nginx.conf
     /etc/nginx/nginx.conf
