@@ -37,8 +37,6 @@ See [[Unsanitized Path]].
 `find / -user <user> 2>/dev/null | egrep -v "proc|venv"`
 `find / -group <group> 2>/dev/null | egrep -v "proc|venv"`
 
-`find / -user marcus 2>/dev/null | egrep -v "proc|venv"`
-
 # Exploit via Path if SUID-Binary does not use full path
 https://www.hackingarticles.in/linux-privilege-escalation-using-path-variable/
 

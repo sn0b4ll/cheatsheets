@@ -3,7 +3,7 @@
 
 Scan aggressively on all ports with OS detection, version detection, script scanning and traceroute and write to file
 ```
-nmap -p- -T4 -oN <outfile> -A <IP>
+nmap -p- -T4 -oN <outfile> -A <IP> -v
 ```
 
 ## NSE-Scripts
