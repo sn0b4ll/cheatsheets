@@ -72,3 +72,9 @@ If mysql or mariadb is running, search for credentials in the config files for w
 
 # Systemd services
 Check `/etc/systemd/` services for custom ones.
+
+# File capabilities
+Check filesystem for files with caps:
+`getcap -r / 2> /dev/null`
+
+Interesting is for example `cap_setuid`.
