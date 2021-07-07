@@ -1,6 +1,9 @@
 # Unsanitized Path
 #unsanitizedpath 
 
+Attention:
+if `sudo -l` includes `env_reset`, this can't be used.
+
 1. Search for suid binaries (see [[Security/Offensive/Linux/LPE]])
 2. Check if binary calls other binaries without full path via `ltrace` and `strace`
 ```
