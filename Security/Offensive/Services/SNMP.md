@@ -12,12 +12,12 @@ https://github.com/SECFORCE/SNMP-Brute/blob/master/snmpbrute.py
 ## snmpwalk
 #snmpwalk
 Get version via snmpbrute
-`snmpwalk -v 2c -c public pit.htb`
+`snmpwalk -v 2c -c public <IP>`
 
 ## snmpbw.pl
 https://github.com/dheiland-r7/snmp
 Faster alternative to snmpwalk.
-`perl snmpbw.pl pit.htb public 2 1`
+`perl snmpbw.pl <ip> public 2 1`
 
 If `NetAddr:IP` is not installed, run
 `cpan -i NetAddr::IP`

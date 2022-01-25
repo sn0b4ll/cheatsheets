@@ -29,3 +29,5 @@ void main(){
 But any executable file can be used.
 6. Run the vulnerable binary
 7. `$$$`
+
+DOES NOT WORK WITH METERPRETER SHELL! Use SSH...
