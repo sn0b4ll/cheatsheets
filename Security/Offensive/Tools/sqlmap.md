@@ -31,6 +31,11 @@ def tamper(payload, **kwargs):
     return retVal
 ```
 
+## Fetch all tables without sys tables
+`sqlmap -u http://localhost:8081/\?id\=1 --dump-all --exclude-sysdbs`
+
 ## Eval
 Same but faster can be achieved with
 `sqlmap -r req.req --eval="import hashlib ; h=hashlib.md5(('<salt>'+order).encode('utf-8')).hexdigest()"  --batch --tables --threads=10`
+
+

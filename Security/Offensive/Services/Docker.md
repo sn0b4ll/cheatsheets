@@ -11,3 +11,6 @@ Escape by privs https://blog.pentesteracademy.com/abusing-sys-module-capability-
 
 ## runc
 https://github.com/Frichetten/CVE-2019-5736-PoC
+
+## Root
+If you are root, you can look at `fstab -l` and try to mount the host drive into the container.

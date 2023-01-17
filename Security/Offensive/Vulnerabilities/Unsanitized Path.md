@@ -31,3 +31,10 @@ But any executable file can be used.
 7. `$$$`
 
 DOES NOT WORK WITH METERPRETER SHELL! Use SSH...
+
+
+## sudo
+For sudo, make sure that you can pass the environment. Then you can do it like:
+```
+sudo "PATH=$PATH" make install
+```

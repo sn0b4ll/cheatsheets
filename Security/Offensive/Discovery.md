@@ -7,5 +7,5 @@ See [[nmap]].
 
   
 #gobuster
-`gobuster vhost --url horizontall.htb --wordlist subdomains-top1million-110000.txt`
+`gobuster vhost --url http://horizontall.htb --wordlist subdomains-top1million-110000.txt`
 Wordlist: https://github.com/danielmiessler/SecLists

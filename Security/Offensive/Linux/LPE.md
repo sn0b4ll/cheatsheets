@@ -17,7 +17,7 @@ https://book.hacktricks.xyz/linux-unix/privilege-escalation
 - Dmesg signature verification failed error?
 - More system enum (date, system stats, cpu info, printers)
 - Enumerate more defenses
-	- #LinPEAS: https://raw.githubusercontent.com/carlospolop/privilege-escalation-awesome-scripts-suite/master/linPEAS/linpeas.sh
+	- #LinPEAS: https://github.com/carlospolop/PEASS-ng/releases/latest/download/linpeas.sh 
 
 
 # Sticky-Bit
@@ -37,6 +37,8 @@ See [[Unsanitized Path]].
 `find / -user <user> 2>/dev/null | egrep -v "proc|venv"`
 `find / -group <group> 2>/dev/null | egrep -v "proc|venv"`
 
+# Search for custom files
+`find / -regex ".*\.sh" 2>/dev/null`
 # Exploit via Path if SUID-Binary does not use full path
 https://www.hackingarticles.in/linux-privilege-escalation-using-path-variable/
 
